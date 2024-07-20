@@ -1,4 +1,4 @@
-# [SDF08] Build Your Portfolio MVP
+# [SDF07] Build Your Portfolio MVP
 
 ![alt text](portfolio.png)
 
@@ -16,7 +16,8 @@ This guide will walk you through the process of forking the Build Your Portfolio
 
 Forking allows you to have a personal copy of the project on their GitHub account, which you can then clone to your local machine, make changes, commit, and push back to your forked version without affecting the original repository.
 
-1. **Navigate to the Repository:** Go to the [CodeSpace-Academy/Module_8_StudentNo_Classcode_Group_Name-Surname_SDF08 (github.com)](https://github.com/CodeSpace-Academy/Module_8_StudentNo_Classcode_Group_Name-Surname_SDF08). Look for a button labeled **Fork** in the top-right corner of the page.
+1. **Navigate to the Repository:** Go to the 
+. Look for a button labeled **Fork** in the top-right corner of the page.
 2. **Fork the Repository:** Click the **Fork** button. This creates a copy of the repository in your own GitHub account, allowing you to make changes without affecting the original code.
 
 ### Step 2: Clone Your Forked Repository

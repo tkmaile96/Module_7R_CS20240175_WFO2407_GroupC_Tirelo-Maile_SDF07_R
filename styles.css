@@ -158,3 +158,130 @@ header {
 .hamburger::before {
     bottom: 4px;
 }
+
+
+/*-- Typography --*/
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+h2 {
+    font-size: var(--fs-h2);
+}
+h3 {
+    font-size: var(--fs-h3);
+}
+
+.section-title {
+margin-bottom: .25em;
+}
+
+.section-title-intro {
+    font-weight: var(--fw-reg);
+}
+    .section-title-intro strong {
+display: block;
+    }
+.section-subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+    text-transform: uppercase;
+}
+
+.section-subtitle-intro,
+.section-subtitle-about {
+    background: var(--color-accent);
+    font-family: var(--ff-secondary);
+    padding: .25em 1em;
+    margin-bottom: 1em;
+}
+
+/*--- Introduction-Section ---*/
+.intro {
+    position: relative;
+   
+}
+.intro-img {
+    background: var(--box-shadow);
+}
+.section-subtitle-intro {
+    display: inline-block;
+}
+
+@media (min-width: 600px) {
+    .intro {
+        display:grid;
+        grid-column-gap:1em;
+        width: min-content;
+        margin: 0 auto;
+        grid-template-areas: 
+        "img title"
+        "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    .section-subtitle-intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
+    .intro-img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+/*--- Service-Section ---*/
+
+.my-services {
+    background: var(--color-dark);
+    background-image: url(./images/programming-code-minimalism-wallpaper-preview.jpg);
+    background-size: cover;
+     color: var(--color-light);
+     text-align: center;
+
+}
+.section-title-services {
+    color: var(--color-accent);
+    position: relative;
+}
+.section-title-services::after {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--color-accent);
+    opacity: 0.35;
+}
+.service{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.services {
+    margin-bottom: 4.3em;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .services + .service {
+        margin-left: 2em;
+    }
+}

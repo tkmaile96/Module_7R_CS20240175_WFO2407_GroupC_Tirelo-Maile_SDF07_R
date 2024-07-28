@@ -58,6 +58,30 @@ img {
 strong {
     font-weight: var(--fw-bold);
 }
+:focus {
+    outline: 1px solid var(--color-accent);
+    outline-offset: 1px;
+}
+
+
+.btn {
+    display: inline-block;
+    background: var(--color-dark);
+    padding: .5em 3.5em;
+    color: var(--color-accent);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    font-weight: var(--fw-bold);
+    transition: transform 1s ease;
+}
+.btn:hover {
+    background: var(--color-accent);
+    color: bisque;
+    transform: translateY(5px);
+}
 
 
 /*-- Header --*/
@@ -161,7 +185,6 @@ header {
 
 
 /*-- Typography --*/
-
 h1,
 h2,
 h3 {
@@ -178,7 +201,6 @@ h2 {
 h3 {
     font-size: var(--fs-h3);
 }
-
 .section-title {
 margin-bottom: .25em;
 }
@@ -186,13 +208,12 @@ margin-bottom: .25em;
 .section-title-intro {
     font-weight: var(--fw-reg);
 }
-    .section-title-intro strong {
-display: block;
-    }
+.section-title-intro strong {
+    display: block;
+}
 .section-subtitle {
-    margin: 0;
-    font-size: var(--fs-h3);
-    text-transform: uppercase;
+margin: 0;
+font-size: var(--fs-h3);
 }
 
 .section-subtitle-intro,
@@ -206,25 +227,23 @@ display: block;
 /*--- Introduction-Section ---*/
 .intro {
     position: relative;
-   
 }
-.intro-img {
-    background: var(--box-shadow);
-}
-.section-subtitle-intro {
-    display: inline-block;
-}
-
-@media (min-width: 600px) {
+@media (min-width:600px) {
     .intro {
-        display:grid;
-        grid-column-gap:1em;
+        display: grid;
+        grid-gap: 1em;
         width: min-content;
         margin: 0 auto;
         grid-template-areas: 
         "img title"
         "img subtitle";
         grid-template-columns: min-content max-content;
+    }
+    .intro-img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
     }
     .section-subtitle-intro {
         align-self: start;
@@ -234,12 +253,7 @@ display: block;
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
-    }
-    .intro-img {
-        grid-area: img;
-        min-width: 250px;
-        position: relative;
-        z-index: 2;
+
     }
 }
 

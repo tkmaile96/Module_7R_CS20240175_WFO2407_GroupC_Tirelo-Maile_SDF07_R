@@ -11,8 +11,8 @@
     --fw-bold: 900;
 
     --color-light: #fff;
-    --color-dark: #303030;
-    --color-accent: #efba75;
+    --color-dark: #0e0d0d;
+    --color-accent: #5871ed;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -42,7 +42,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
-    background: #59471f;
+    background: #fff;
     color: var(--color-light);
 }
 section {
@@ -66,9 +66,9 @@ strong {
 
 .btn {
     display: inline-block;
-    background: var(--color-dark);
     padding: .5em 3.5em;
-    color: var(--color-accent);
+    background: #5871ed;
+    color: var(--color-light);
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -83,7 +83,12 @@ strong {
     transform: translateY(5px);
 }
 p {
+    color: var(--color-dark);
     padding: 2rem;
+}
+button {
+    background: #5871ed;
+    color: var(--color-light);
 }
 
 
@@ -98,6 +103,7 @@ header {
 
 .logo {
     max-width: 200px;
+    padding: .45em 1em;
 }
 
 .nav-bar {
@@ -204,6 +210,7 @@ h3 {
     font-size: var(--fs-h3);
 }
 .section-title {
+color: var(--color-dark);
 margin-bottom: .25em;
 }
 
@@ -224,6 +231,7 @@ font-size: var(--fs-h3);
     font-family: var(--ff-secondary);
     padding: .25em 1em;
     margin-bottom: 1em;
+    text-transform: uppercase;
 }
 
 /*--- Introduction-Section ---*/
@@ -263,10 +271,10 @@ font-size: var(--fs-h3);
 
 .my-services {
     background: var(--color-dark);
-    background-image: url(./images/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+    background-image: url(./images/C2EBED.png.png);
     background-size: cover;
      color: var(--color-light);
-     text-align: center;
+   text-align: center;
 
 }
 .section-title-services {
@@ -312,6 +320,7 @@ font-size: var(--fs-h3);
 }
 .about-me-img {
     box-shadow: var(--box-shadow);
+    height: 50%;
 }
 
 @media (min-width: 600px) {
@@ -349,8 +358,10 @@ font-size: var(--fs-h3);
 /*-- Work-Section --*/
 
 .my-work {
-    background-color: var(--color-dark);
-    color:var(--color-light);
+    background-image: url(./images/C2EBED.png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:var(--color-dark);
     text-align: center;
  }
  .portfolio {
@@ -418,7 +429,7 @@ font-size: var(--fs-h3);
     transition: 0.3s ease-out;
  }
  .social-list-link:hover {
-    text-shadow: 2px 2px 1px rgb(83, 243, 83);
+    text-shadow: 2px 2px 1px #f91919;
     color: var(--color-accent);
     transform: translateY(-8px);
  }

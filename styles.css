@@ -424,7 +424,7 @@ font-size: var(--fs-h3);
  }
 
  /*-- Portfolio Item --*/
- .portfolio-item {
+ .portfolio-project {
     padding: 0 2em 2em;
     width: 50%;
     max-width: 1000px;
